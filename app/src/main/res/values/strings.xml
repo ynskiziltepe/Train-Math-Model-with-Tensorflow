@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tensorflow Inference Math Model</string>
+    <string name="please_enter_x_value">Please enter x value</string>
+    <string name="y_3x_2">y = 3x + 2</string>
+    <string name="inferred_result">Inferred result</string>
+    <string name="inferred_and_rounded_result">Inferred and rounded result</string>
+    <string name="inference">Infer</string>
+    <string name="explanation">The purpose of this application is to show the use of Tensorflow in the simplest way. In this application, the dependent variable y is inferred by used the independent variable x</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B50B8FF6"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:text="@string/explanation"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/equation_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/y_3x_2"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/header" />
+
+    <EditText
+        android:id="@+id/independedValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="@string/please_enter_x_value"
+        android:textColorHint="#DC000000"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:layout_below="@+id/equation_type"/>
+
+    <TextView
+        android:id="@+id/inferredResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/independedValue"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:hint="@string/inferred_result"
+        android:background="#FAF3BD"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:id="@+id/inferredAndRoundedResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/inferredResult"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:hint="@string/inferred_and_rounded_result"
+        android:background="#FAF3BD"
+        android:layout_marginTop="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onClick"
+        android:id="@+id/btnInference"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:text="@string/inference"
+        android:layout_below="@id/inferredAndRoundedResult"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#8FCEEA"/>
+
+</RelativeLayout>
