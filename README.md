@@ -1,4 +1,4 @@
-# Train Math Model (Linear Equation) with Tensorflow
+# Training Math Model (Linear Equation) with Tensorflow
 
 ### Screenshots
 ![](/images/image1.jpg)
